@@ -1,0 +1,126 @@
+.footer {
+    background-color: #1C1812;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+  .footer-navigation{
+    display: flex;
+    align-items: center;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1160px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin: 9px;
+    color: #F7F7F6;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .footer-links li a {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #F7F7F6;
+    text-decoration: none;
+  }
+  
+  .footer-links li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-logo {
+    height: 40px;
+    max-width: 100%;
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-icons img {
+    height: 30px;
+    max-width: 100%;
+  }
+  
+  .footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .footer-bottom p {
+    color: #AEADAA;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+  }
+  
+  /* Tablet Screens (≤768px) */
+  @media screen and (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+   .footer-navigation{
+    flex-direction: column;
+   }
+    .footer-links {
+        flex-direction: row !important;  /* Change links to column */
+        align-items: center;
+        gap: 15px;
+      }
+    .footer-icons {
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+  
+    .footer-icons img {
+      height: 25px;
+    }
+  
+    .footer-bottom p {
+      font-size: 15px;
+    }
+  }
+  
+  /* Mobile Screens (≤480px) */
+  @media screen and (max-width: 480px) {
+    .footer {
+      padding: 15px;
+    }
+  
+    .footer-links {
+      flex-direction: row;
+      text-align: center;
+      gap: 10px;
+    }
+  
+    .footer-icons {
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .footer-bottom p {
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,114 @@
+.hero-container {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-content {
+    min-height: 300px;
+    width: 1185px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  .hero-text {
+    border: 1px solid transparent;
+    text-align: left;
+    margin: 10px;
+  }
+  
+  .hero-title {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    margin: 10px 0;
+  }
+  
+  .hero-description {
+    max-width: 600px;
+    padding: 10px;
+  }
+  
+  .hero-button {
+    background-color: #514432 !important;
+    color: #fff !important;
+    margin-left: 10px;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-image {
+        order: -1; /* Move the image to the top */
+    }
+
+    .hero-title,
+    .hero-description,
+    .hero-button {
+        /* text-align: center;
+        margin: 0 auto; */
+        
+    }
+   
+}
+ @media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        /* align-items: center;
+        text-align: center; */
+    }
+
+    .hero-image  img {
+        order: -1; /* Move the image to the top */
+        height: 575px;
+    }
+
+    .hero-title{
+        text-align: left;
+        width: 94vw;
+    }
+    .hero-description{
+        font-size: 20px;
+        font-weight: 400;
+        color: #65625E;
+    },
+    .hero-button {
+        /* text-align: center;
+        margin: 0 auto; */
+        
+    }
+   
+}
+
+@media screen and (max-width: 425px) {
+    .hero-container {
+        height: 330px; /* Adjust the height for this specific screen size */
+    }
+    .hero-content {
+        flex-direction: column;
+        /* align-items: center;
+        text-align: center; */
+    }
+    img {
+        order: -1;
+        height: 330px;
+    }
+    .hero-title,
+    .hero-description,
+    .hero-button {
+        /* text-align: center;
+        margin: 0 auto; */
+    }
+}

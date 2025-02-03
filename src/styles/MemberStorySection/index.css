@@ -1,0 +1,33 @@
+.story-section{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+}
+
+.member-stories-title {
+    font-weight: 600;
+    font-size: 48px;
+    text-align: left;  /* Align text to the left for large screens */
+  }
+
+  @media (max-width: 768px) {
+    .story-section {
+      margin-left: 20px; /* Smaller margin for tablets */
+      width: 720px;
+    }
+    .member-stories-title{
+      margin-left: 20px;
+    }
+    .member-stories-title {
+      width: 700px !important;
+      margin-left: 0;
+    }}
+  
+  /* Media Query for small screens (max width 480px) */
+  @media (max-width: 480px) {
+    .story-section {
+      margin-left: 10px; /* Even smaller margin for small screens */
+    }
+  }
